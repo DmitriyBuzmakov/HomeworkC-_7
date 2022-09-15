@@ -15,6 +15,7 @@ for (int i = 0; i < array.GetLength(0); i++)
     }
     Console.WriteLine();
 }
+Console.Write("Среднее арифметическое каждого столбца: ");
 for (int j = 0; j < array.GetLength(1); j++)
 {
     double sum = 0;
@@ -22,6 +23,5 @@ for (int j = 0; j < array.GetLength(1); j++)
     {
         sum += array[i, j];
     }
-  
     Console.Write($"{sum / array.GetLength(0):f2} ");
 }
